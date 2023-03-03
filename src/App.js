@@ -5,7 +5,7 @@ import { Navbar,Container,Nav,Form, FormControl,Button } from 'react-bootstrap';
 
 
 const API_URL = "https://api.themoviedb.org/3/movie/popular?api_key=3b359ba49bd6af5cddb0dc11162cffe0"; 
-
+const API_SEARCH = "https://api.themoviedb.org/3/search/movie?api_key=api_key=3b359ba49bd6af5cddb0dc11162cffe0&query";
 function App() {
   const [movies, setMovies]=useState([]);
   const [query, setQuery]=useState('');
@@ -38,7 +38,7 @@ function App() {
   const changeHandler=(e)=>{
     setQuery(e.target.value);
   }
-
+  
   return (
       <>
       <Navbar bg="dark" expand="lg" variant="dark">
