@@ -5,17 +5,16 @@ body{
   text-decoration: none;
   list-style-type: none;
   outline: none;
-  /* background-image: url("background.jpg"); */
 }
 .container{
   width: 100%;
   margin: 1em auto;
-  background-color: darkslategray;
+  background-color: rgb(242, 246, 246);
 }
 .grid{
   display: grid;
   margin-left: .5px;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 0.2em;
+  grid-gap: 0.7em;
   justify-content: center;
 }
